@@ -14,4 +14,8 @@ describe "#digital_filter" do
     expect(digital_filter([30, 100, 1000], 40, 1000)).to eq [40, 100, 1000]
   end
 
+  it "should return a modified sound_wave when highest freq is outside of allowed value" do
+    expect(digital_filter([40, 100, 1500], 40, 1000)).to eq [40, 100, 1000]
+  end
+
 end
