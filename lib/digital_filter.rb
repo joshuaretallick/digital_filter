@@ -1,4 +1,4 @@
-def digital_filter(sound_wave, low_freq, high_freq)
+def digital_filter(sound_wave, low_freq = 40, high_freq = 1000)
 
   new_sound_wave = []
 
